@@ -10,7 +10,7 @@ const BookCard = ({ image, title, author, price, bookid, fav }) => {
   const removeFromFavourite = async () => {
     try {
       const response = await axios.put(
-        "http://localhost:1000/api/v1/remove-from-favourite",
+        "https://bookbackend-duko.onrender.com/api/v1/remove-from-favourite",
         {},
         { headers }
       );

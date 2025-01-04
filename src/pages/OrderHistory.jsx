@@ -17,7 +17,7 @@ const OrderHistory = () => {
     const fetchOrderHistory = async () => {
       try {
         const res = await axios.get(
-          "http://localhost:1000/api/v1/get-order-history",
+          "https://bookbackend-duko.onrender.com/api/v1/get-order-history",
           { headers }
         );
         setOrderHistory(res.data.data);
